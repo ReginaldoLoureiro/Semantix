@@ -38,7 +38,7 @@ Segue abaixo o comando para execucao do codigo:
 
 colocar todos os arquivos no mesmo diretorio, pois o caminho do script é ./
 
-$ sh semantix_nasa NASA
+$ sh semantix_nasa.sh NASA
 
 Responda as seguintes questões devem ser desenvolvidas em Spark utilizando a sua linguagem de preferência.
 
