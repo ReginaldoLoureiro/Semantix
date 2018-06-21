@@ -21,10 +21,15 @@ R: O GroupByKey é menos eficiente que o reduceByKey, porque ele pré-agrupa os 
 6.	Explique o que o código Scala abaixo faz.
 
 val textFile = sc . textFile ( "hdfs://..." )
+
 val counts = textFile . flatMap ( line => line . split ( " " ))
+
 .map ( word => ( word , 1 ))
+
 .reduceByKey ( _ + _ )
+
 counts . saveAsTextFile ( "hdfs://..." )
+
 R: Este é um programa que conta palavras. 
 Cria o RDD textFile;
 Separa por espaço;
